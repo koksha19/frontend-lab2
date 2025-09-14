@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Береза Л.С., ІМ-32</title>
+        <meta name="keywords" content="Береза, Л.С., ІМ-32, студент, веб-сторінка">
+        <meta name="description" content="Лабораторна робота 2">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td {
+                border: 1px solid black;
+                height: 50px;
+                text-align: center;
+            }
+
+            .col {
+                width: 100px;
+            }
+
+            .first-row {
+                background-color: #088f8f;
+                color: #ffffff;
+            }
+
+            .first-row:hover {
+                background-color: #f5f508;
+                color: #000000;
+            }
+
+            .second-row {
+                background-color: #f5f508;
+                color: #000000;
+            }
+
+            .second-row:hover {
+                background-color: #088f8f;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <colgroup>
+                <col class="col" span="8">
+            </colgroup>
+            <tr class="first-row">
+                <td>Береза</td>
+                <td>Лев</td>
+                <td colspan="2" rowspan="2"></td>
+                <td colspan="2">Сергійович</td>
+                <td colspan="2" rowspan="2">Вар 8</td>
+            </tr>
+            <tr class="second-row">
+                <td colspan="2">ІМ-32</td>
+                <td colspan="2">Лаб 2</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="6"></td>
+            </tr>
+        </table>
+        <div class="squares">
+            <div>
+                <h2>Спосіб 1 – position</h2>
+                <div class="container position">
+                    <div class="square orange"></div>
+                    <div class="square pink"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Спосіб 2 – transform</h2>
+                <div class="container transform">
+                    <div class="square orange"></div>
+                    <div class="square pink transform-square"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
