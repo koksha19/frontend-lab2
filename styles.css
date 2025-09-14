@@ -4,8 +4,14 @@
     justify-self: center;
 }
 
-.container {
+.container-pos {
     position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.container-trans {
     width: 200px;
     height: 200px;
     margin: 20px;
@@ -28,23 +34,20 @@
     background: #b5838d;
 }
 
-.container.position .orange {
+.container-pos.position .orange {
     top: 20px;
     left: 20px;
 }
 
-.container.position .pink {
+.container-pos.position .pink {
     top: 60px;
     left: 60px;
 }
 
-.container.transform .orange {
-    top: 20px;
-    left: 20px;
+.container-trans.transform .orange {
+    transform: translate(20px, 20px);
 }
 
-.container.transform .pink {
-    top: 20px;
-    left: 20px;
-    transform: translate(40px, 40px);
+.container-trans.transform .pink {
+    transform: translate(60px, 60px);
 }
